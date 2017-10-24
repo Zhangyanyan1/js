@@ -1,1 +1,74 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>名字的首字母测试古代职位</h2>
+		<div>
+			<input id="text" type="text" />
+			<button id="btn">确定</button>
+		</div>
+		<p id="res"></p>
+		<script type="text/javascript">
+			var userText = document.getElementById('text');
+			var btu = document.getElementById('btn');
+			var res = document.getElementById('res');
+			var Name = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+			var firstName = ["曹魏","东吴","蜀汉","土番","大秦","西夏","大金","大明","东吴","鲜卑","晚清","西周","赵国","大辽","西夏","大宋","中山国","东晋","羌族","晚清","民国","齐国","大理","太平天国","南唐","蒙古"];
+			var middleName = ["阴损","绝顶","猥琐","爱国","豪门","白痴","天才","狗屎","无敌","英勇","狗头","无双","饭桶","变态","阴暗","嗜血","旷世","脓包","血手","平庸","爱国","亡国","暴力","坏鬼","粗旷","逍遥"];
+			var lastName = ['道士','老鸨','和尚','财主','屠夫','马夫','嫔妃','小兵','刀客','卫士','农夫','将军','马夫','教头','书生','乞丐','皇帝','丞相','狗腿','佳人','土匪','老鸨','诗人','名妓','名士','将军'];
+			var first = 0,middle = 0,last = 0;
+			btn.onclick = function(){
+				var str = userText.value;
+				if (str.length <= 1 || str.length > 3) {
+					res.innerHTML= '世界之大无奇不有,本网站暂未收录！请改名后再测试';
+					return;
+				}
+				for(var i = 0; i < str.length; i++){
+						if(panduan(str[i])){
+							res.innerHTML = '输入格式不正确！请重新输入';
+							return;
+						}
+				}
+				if (str.length === 2) {
+				    for (var i = 0; i < Name.length; i++) {
+				    	if(str[0].toUpperCase() === Name[i]){
+							first = i;
+						}
+						if(str[1].toUpperCase() === Name[i]){
+							last = i;
+						}
+				    }
+				    res.innerHTML = firstName[first]+lastName[last];
+				}
+				else{
+					for(var i = 0; i < Name.length; i++){
+						if(str[0].toUpperCase() === Name[i]){
+							first = i;
+						}
+						if(str[1].toUpperCase() === Name[i]){
+							middle = i;
+						}
+						if(str[2].toUpperCase() === Name[i]){
+							last = i;
+						}
+					}
+					res.innerHTML = firstName[first]+middleName[middle]+lastName[last];
+				}
+			}
+			function panduan(str){
+				if (str.charCodeAt()<65 || str.charCodeAt()>122) {
+				    return true;
+				}
+				return false;
+			}
+		</script>
+	</body>
+</html>
