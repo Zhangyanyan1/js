@@ -1,1 +1,44 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				text-align: center; 
+				width: 20px;
+				height: 20px;
+				background-color: #f00;
+				border-radius: 50%;
+				position: absolute;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<script type="text/javascript">
+			var arr = [
+			    [1,1],
+			    [1,1],
+			    [1,1],
+			    [1,1],
+			    [1,1],
+			    [1,1,1,1],
+			    [1,1,1,1]
+			];
+			var str = '';
+			var r=0,g=0,b=0;
+			for (var i = 0; i < arr.length; i++) {
+				for (var j = 0; j < arr[i].length; j++) {
+					r = parseInt(Math.random()*240)+10;
+					g = parseInt(Math.random()*240)+10;
+					b = parseInt(Math.random()*240)+10;	
+				    str += '<div style="top:'+ i*20 +'px;left:'+ j*20 +'px;background-color: rgb('+r+','+g+','+b+');"></div>'
+			    }
+			}
+			document.body.innerHTML += str;
+			
+		</script>
+	</body>
+</html>
