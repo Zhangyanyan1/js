@@ -1,1 +1,143 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+		</style>
+		<script type="text/javascript">
+			
+		</script>
+	</head>
+	<body>
+		<img id="myDiv1" src="img/stone1.png"></img>
+		<img id="myDiv2" src="img/stone2.png"></img>
+		<img id="myDiv3" src="img/stone3.png"></img>
+		<br />
+		<button id="but">开始游戏</button>
+		<br />
+	    <img id="myDiv" src="img/stone1.png"></img>
+		<br />
+		<span id="res"></span>
+		<script type="text/javascript"> 
+			//.getElementById("myDiv")  通过ID获取
+			//.getElementsByClassName("my-div")  通过class获取
+			var mydiv = document.getElementById('myDiv');
+			
+			var res = document.getElementById('res');
+			
+			var but = document.getElementById('but');
+			
+			var mydiv1 = document.getElementById('myDiv1');
+			
+			var mydiv2 = document.getElementById('myDiv2');
+			
+			var mydiv3 = document.getElementById('myDiv3');
+			
+			var btnIsClick = true,stoneIsClick = false;
+			
+			var userNum = 1,comNum = 1;
+			but.onclick = function(){
+				stoneIsClick = true;
+				mydiv1.style.border = 'none';
+				mydiv2.style.border = 'none';
+				mydiv3.style.border = 'none';
+				if(btnIsClick){
+					btnIsClick = false;
+					comNum = parseInt(Math.random()*3)+1;
+					but.innerHTML = '请您选择';
+				}
+				else{
+					return;
+				}
+			}
+			mydiv1.onclick = function(){
+				if(stoneIsClick){
+				   	stoneIsClick = false;
+				   	btnIsClick = true;
+				   	but.innerHTML = '再来一局';
+				   	mydiv1.style.border = '1px solid #f00';
+				   	userNum = 1;
+				   	mydiv.src = 'img/stone' + comNum + '.png';
+				   	res.innerHTML = bijiao(comNum,userNum);
+				}
+			    else{
+					return;
+				}
+				
+			}
+			mydiv2.onclick = function(){
+				if(stoneIsClick){
+				   	stoneIsClick = false;
+				   	btnIsClick = true;
+				   	but.innerHTML = '再来一局';
+				   	mydiv2.style.border = '1px solid #f00';
+				   	userNum = 2;
+				   	mydiv.src = 'img/stone' + comNum + '.png';
+				   	res.innerHTML = bijiao(comNum,userNum);
+				}
+			    else{
+					return;
+				}
+			}
+			mydiv3.onclick = function(){
+			    if(stoneIsClick){
+				   	stoneIsClick = false;
+				   	btnIsClick = true;
+				   	but.innerHTML = '再来一局';
+				   	mydiv3.style.border = '1px solid #f00';
+				   	userNum = 3;
+				   	mydiv.src = 'img/stone' + comNum + '.png';
+				   	res.innerHTML = bijiao(comNum,userNum);
+				}
+			    else{
+					return;
+				}
+			}
+			function bijiao(n1,n2){
+				if(n1===1){
+					if(n2 === 1){
+						return '您出的剪刀,计算机出的剪刀！平局！';
+					}
+					else if(n2 === 2){
+						return '您出的石头,计算机出的剪刀！您赢了！';
+					}
+					else if(n2 === 3){
+						return '您出的布,计算机出的剪刀！您输了！';
+					}
+					return;
+				}
+				if(n1===2){
+					if(n2 === 1){
+						return '您出的剪刀,计算机出的石头！您输了！';
+					}
+					else if(n2 === 2){
+						return '您出的石头,计算机出的石头！平局！';
+					}
+					else if(n2 === 3){
+						return '您出的布,计算机出的石头！您赢了！';
+					}
+					return;
+				}
+				if(n1===3){
+					if(n2 === 1){
+						return '您出的剪刀,计算机出的布！您赢了！';
+					}
+					else if(n2 === 2){
+						return '您出的石头,计算机出的布！您输了！';
+					}
+					else if(n2 === 3){
+						return '您出的布,计算机出的布！平局！';
+					}
+					return;
+				}
+			}
+			var timer = setInterval(function(){
+				
+			},1000);
+		</script>
+	</body>
+</html>
