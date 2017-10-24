@@ -1,1 +1,258 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		    *{
+				margin: 0;
+				padding: 0;
+			}
+
+		    body{
+		    	position: relative;
+		    	border: 1px solid transparent;
+		    	text-align: center;
+		    }
+			div{
+				border: 1px solid #333;
+				box-sizing: border-box;
+				position: absolute;
+			}
+			table{
+				margin: 70px auto 0;
+				background-color: #ff3244;
+			}
+			th,td{
+				width: 100px;
+				height: 50px;
+				text-align: center;
+				background-color: #fff;
+			}
+			td input{
+				width: 3em;
+				height: 18px;
+				vertical-align: middle;
+				outline: none;
+				text-align: center;
+				border: none;
+				border-top: 1px solid #666;
+				border-bottom: 1px solid #666;
+			}
+			body>p>a{
+				display: inline-block;
+				text-decoration: none;
+				background-color: #fff;
+				color: #ff3244;
+				border: 1px solid #ff3244;
+				border-radius: 5px;
+				padding: 6px 20px;
+			}
+			body>p>a:nth-of-type(2){
+			    border-color: #00f;	
+			    color: #00f;
+			}
+			body>p>a:hover{
+			    background-color: #ff3244;	
+			    color: #fff;
+			}
+			body>p>a:nth-of-type(2):hover{
+			    background-color: #00f;	
+			    color: #fff;
+			}
+			body>p>a+a{
+				margin-left: 60px;
+			}
+			td>p>a{
+				text-decoration: none;
+				color: #333;
+				display: inline-block;
+				width: 1.2em;
+				height: 18px;
+				line-height: 18px;
+				text-align: center;
+				vertical-align: middle;
+				background-color: #eee;
+				border: 1px solid #666;
+				cursor: pointer;
+			}
+			.act:hover{
+				background-color: #ff3244;
+				color: #fff;
+			}
+			td>p>a:nth-of-type(1){
+				border-radius: 4px 0 0 4px;
+			}
+			td>p>a:nth-of-type(2){
+				border-radius: 0 4px 4px 0;
+			}
+		</style>
+	</head>
+	<body>
+		<table border="0" cellspacing="1" cellpadding="0">
+			<tr><th>水果</th><th>售价</th><th>奖励</th><th>总金额</th></tr>
+			<tr>
+				<td>
+					<label for="jz">橘子</label>
+					<p class="shoppingEl">
+						<a href="javascript:javascript:changNum(0,false);">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(0,true);">+</a>
+					</p>
+				</td>
+				<td>5</td>
+				<td>2</td>
+				<td id="mon" rowspan="6">0</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pg">苹果</label>
+					<p class="shoppingEl">
+						<a href="javascript:changNum(1,false)">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(1,true)">+</a>
+					</p>
+				</td>
+				<td>10</td>
+				<td>5</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="xj">香蕉</label>
+					<p class="shoppingEl">
+						<a href="javascript:changNum(2,false)">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(2,true)">+</a>
+					</p>
+				</td>
+				<td>20</td>
+				<td>15</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="xg">西瓜</label>
+					<p class="shoppingEl">
+						<a href="javascript:changNum(3,false)">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(3,true)">+</a>
+					</p>
+				</td>
+				<td>40</td>
+				<td>35</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="pt">葡萄</label>
+					<p class="shoppingEl">
+						<a href="javascript:changNum(4,false)">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(4,true)">+</a>
+					</p>
+				</td>
+				<td>50</td>
+				<td>80</td>
+			</tr>
+			<tr>
+				<td>
+					<label for="rsg">人参果</label>
+					<p class="shoppingEl">
+						<a href="javascript:changNum(5,false)">-</a><input type="text" id="jz" value="0" /><a href="javascript:changNum(5,true)">+</a>
+					</p>
+				</td>
+				<td>100</td>
+				<td>300</td>
+			</tr>
+		</table>
+		<p style="margin: 20px 0;">
+			<a href="#">正转</a>
+			<a href="#">充值</a>
+			<a href="javascript:abc();">反转</a>
+		</p>
+		<h4>
+			<span>余额：</span><span id="res">500</span>
+		</h4>
+		<script type="text/javascript">
+			var row = 10;
+			var col = 10;
+			var x = -1;
+			var y = 0;
+			var w = 60;
+			var h = 60;
+			var elements = [];
+			var len = (row+col-2)*2;
+			document.body.style.width = col*w + 'px';
+			document.body.style.margin = '20px auto';
+			for(var i = 0; i < len; i++){
+				elements[i] = [];
+				if(i < col){
+					x++;
+				}
+				else if( i < col + row-1){
+					y++;  
+				}
+				else if( i < col + row + col-2){
+					x--;
+				} 
+				else{  
+					y--;
+				}
+				//创建一个元素
+				elements[i][0] = document.createElement('div');
+				elements[i][0].style.width = w + 'px';
+				elements[i][0].style.height = h + 'px';
+				elements[i][0].style.left = x*w + 'px';
+				elements[i][0].style.top = y*h + 'px';
+				document.body.appendChild(elements[i][0]);
+			}
+			for(var i = 0; i < len; i++){
+				move(i);
+			}
+			function move(n){
+				var timer = setTimeout(function(){
+					clearTimeout(timer);
+					for(var i = 0; i < len; i++){
+				        elements[i][0].style.backgroundColor = '#fff';
+			        }
+					elements[n][0].style.backgroundColor = '#f00';
+				},n*n*10+500);
+			}
+		</script>
+		<script type="text/javascript">
+		    //['售价','奖励金额','购买数量']
+			var fruits = [
+			//橘子     0
+				[5,2,0],
+			//苹果     1
+				[10,5,0],
+			//香蕉     2
+				[20,15,0],
+			//西瓜     3
+				[40,35,0],
+			//葡萄     4
+				[50,80,0],
+			//人参果  5
+				[100,300,0]
+			];
+            var inputBox = document.getElementsByTagName('input');
+            var res = document.getElementById('res');
+            var mon = document.getElementById('mon');
+			var gameGolb = 500;
+			res.innerHTML = gameGolb;
+			function changNum(n,f){
+				var m = 0;
+				var num = parseInt(inputBox[n].value);
+				if(f){
+					num += 1;
+				}
+				else{
+					if(num < 1){
+						return;
+					}
+					num -= 1;
+				}
+				fruits[n][2] = num;
+				for(var i = 0; i < fruits.length; i++){
+					m += fruits[i][2]*fruits[i][0];
+				}
+				if(gameGolb-m < 0){
+					fruits[n][2] = parseInt(inputBox[n].value);
+					return;
+				}
+				inputBox[n].value = num;
+				mon.innerHTML = m;
+				res.innerHTML = gameGolb - m;
+				console.log(gameGolb,m)
+			}
+		</script>
+	</body>
+</html>
