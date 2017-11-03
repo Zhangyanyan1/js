@@ -1,1 +1,96 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<h2 id="res">掷骰子游戏</h2>
+		<img id="img1" src="img/dice0.png"/>
+		<img id="img2" src="img/dice0.png"/>
+		<img id="img3" src="img/dice0.png"/>
+		<br />
+		<button id="but1">买大</button>
+		<button id="but2">买小</button>
+		<button id="but3">买豹子</button>
+		<br />
+		<span id="res1"></span>
+		<br />
+		<span id="res2"></span>
+		<script type="text/javascript">
+		function $(id){
+			return document.getElementById(id);
+		}
+		    var img1 = $('img1');
+			var img2 = $('img2');
+			var img3 = $('img3');
+			var but1 = $('but1');
+			var but2 = $('but2');
+			var but3 = $('but3');
+			var res1 = $('res1');
+			var res2 = $('res2');
+			
+			but1.onclick = function(){
+				imgStc(2);
+			}
+			but2.onclick = function(){
+				imgStc(1);
+			}
+			but3.onclick = function(){
+				imgStc(0);
+			}
+			function imgStc(i){
+				var num = 0;
+				var n = parseInt(Math.random()*30)+10;
+				var a = 0,b = 0,c = 0;
+				var timer = setInterval(function(){
+					num ++;
+					a = parseInt(Math.random()*6);
+					b = parseInt(Math.random()*6);
+					c = parseInt(Math.random()*6);
+					img1.src = 'img/dice' + a + '.png';
+					img2.src = 'img/dice' + b + '.png';
+				    img3.src = 'img/dice' + c + '.png';
+			        if(num>n){
+			    	    clearInterval(timer);
+			    	    if(i === 0){
+				        if(a === b && a === c){
+				        	res1.innerHTML = '恭喜这位客官！您买的是豹子中奖了！';
+				    	    res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';
+				        }
+				        else{
+				        	res1.innerHTML = '抱歉这位客官！您买的是豹子没中奖！';
+				            res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';	
+				        }
+				    }
+			        else if(i === 1){
+				        if(a+b+c<9){
+				        	res1.innerHTML = '恭喜这位客官！您买的是小中奖了！';
+				    	    res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';
+				        }
+				        else{
+				        	res1.innerHTML = '抱歉这位客官！您买的是小没中奖！';
+				            res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';	
+				        }
+				    }
+			        else if(i === 2){
+				        if(a+b+c>9){
+				        	res1.innerHTML = '恭喜这位客官！您买的是大中奖了！';
+				    	    res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';
+				        }
+				        else{
+				        	res1.innerHTML = '抱歉这位客官！您买的是大没中奖！';
+				            res2.innerHTML = '开奖结果是：'+(a+1)+'&nbsp;'+(b+1)+'&nbsp;'+(c+1)+'&nbsp;';	
+				        }
+				    }
+			        }
+				},100);
+			}
+		</script>
+	</body>
+</html>
