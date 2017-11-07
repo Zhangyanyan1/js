@@ -1,1 +1,97 @@
-# js
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				/*有兼容性*/
+				/*谷歌，苹果---webkit*/
+				-webkit-perspective: 2000px;
+				-ms-perspective: 2000px;
+				-o-perspective: 2000px;
+				-moz-perspective: 2000px;
+				perspective: 2000px;
+				perspective-origin: left bottom;
+			}
+			.p{
+				width: 200px; 
+				height: 200px;
+				margin: 200px auto 0;
+				/*border: 1px solid #000;*/
+				
+				transform-style: preserve-3d;
+				
+				animation: rotateX 10s linear infinite;
+			}
+			@keyframes rotateX{
+				from{
+					transform: rotateX(0deg)rotateY(0deg);
+				}
+				to{
+				transform: rotateX(360deg)rotateY(360deg);	
+				}
+			}
+			.p>div{
+				width: 200px;
+				height: 200px;
+				/*水平居中*/
+				text-align: center;
+				/*圆角*/
+				border-radius: 20px;
+				
+				line-height: 200px;
+				font-size: 60px;
+				position: absolute;
+			}
+			.shang{  
+				top: -100px;
+				left: 0px;
+				transform: rotateX(90deg);
+				background-color: #937597;
+			}
+			.you{
+				top: 0px;
+				left: 100px;
+				transform: rotateY(90deg);
+				background-color: #a37997;
+			}
+			.xia{
+				top: 100px;
+				left: 0px;
+				transform: rotateX(-90deg);
+				background-color: #83a5b7;
+			}
+			.zuo{
+				top: 0px;
+				left: -100px;
+				transform: rotateY(-90deg);
+				background-color: #739577;
+			}
+			.hou{
+				top: 0px;
+				left: 0px;
+				transform: rotateY(180deg)translateZ(100px);
+				background-color: #637567;
+			}
+			.qian{
+				transform: translateZ(100px);
+				background-color: #638527;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="p">
+			<div class="shang">上</div>
+			<div class="you">右</div>
+			<div class="xia">下</div>
+			<div class="zuo">左</div>
+			<div class="qian">前</div>
+			<div class="hou">后</div>
+		</div>
+	</body>
+</html>
