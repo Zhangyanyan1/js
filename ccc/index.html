@@ -1,1 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/project.css"/>
 
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div id="deng"></div>
+                <div class="panel-heading sf">
+                    <h3>是否过马路</h3>
+                    <p>
+                        <button id="shi">是</button>
+                        <button id="fou">否</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="ttt" class="alert alert-danger alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4>选错了，你还需要学习</h4>
+                    <p>
+                        <button type="button" class="btn btn-danger">立即学习</button>
+                        <button type="button" class="btn btn-default"  data-dismiss="alert"  >稍后学习</button>
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div id="ccc" class="alert alert-danger alert-dismissible fade in" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4>选对了</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var deng=document.getElementById('deng');
+        var shi=document.getElementById('shi');
+        var fou=document.getElementById('fou');
+        var ttt=document.getElementById('ttt');
+        var ccc=document.getElementById('ccc');
+        var e=Math.floor(Math.random()*3+1);
+        if(e==1){
+            deng.innerHTML="红灯";
+            deng.style.backgroundColor= "#E61C14";
+        }else if(e==2){
+            deng.innerHTML="绿灯";
+            deng.style.backgroundColor= "#1EA91A";
+        }else if(e==3){
+            deng.innerHTML="黄灯";
+            deng.style.backgroundColor= "#DEE502";
+        }
+        shi.onclick=function(){
+            if(e==1){
+                ttt.style.display="block"
+            }else if(e==2){
+                ccc.style.display="block"
+            }else if(e==3){
+                ttt.style.display="block"
+            }
+        };
+        fou.onclick=function(){
+            if(e==1){
+                ccc.style.display="block"
+            }else if(e==2){
+                ttt.style.display="block"
+            }else if(e==3){
+                ccc.style.display="block"
+            }
+        };
+    </script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
