@@ -1,0 +1,100 @@
+body {
+	font-family: 'Microsoft YaHei', sans-serif;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+a:hover{
+	text-decoration: none;
+	color: #333;
+}
+.col-md-4 .con{
+	height: 200px;
+	overflow: hidden;
+	background-color: #eaeac0;
+	border: 1px solid #a5a4a4;
+}
+.fy{
+	height: 200px;
+	background: url("../img/548346693312724161.png") no-repeat -20px 0;
+	background-size: 50%;
+	font-size: 23px;
+	padding: 50px 0 0 120px;
+}
+.fy p{
+	margin-left: 40px;
+	margin-top: 10px;
+}
+.col-md-4 .fy a{
+	font-size: 18px;
+	background-color: #02a3ff;
+	border-radius: 10px;
+	padding: 5px;
+}
+.sp{
+	height: 200px;
+	position: relative;
+	/*border: 1px solid #a5a4a4;*/
+}
+.sp img{
+	width: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.sp .tm{
+	top: 140px;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	color: #fff;
+	padding: 5px 20% 0 10px;
+	position: absolute;
+	background: rgba(48, 152, 140, 0.5);
+	font-size: 16px;
+}
+.tty{
+	width: 100%;
+	height: 140px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.5);
+	color: #fff;
+	padding: 20px;
+}
+.sp .hs{
+    width: 25%;
+	position: absolute;
+	top: 110px;
+	left: 75%;
+}
+.ty{
+    position: relative;
+}
+.ty .cone{
+	top: 20px;
+	left: 30%;
+    position: absolute;
+}
+.ty .conet{
+	top: 20px;
+	left: 40%;
+    position: absolute;
+}
+.ty a{
+	top: 15px;
+	left: 10px;
+	padding: 5px;
+	border-radius: 10px;
+    position: absolute;
+	background-color: #0293e6;
+}
+.ty .tya{
+	left: 75px;
+}
