@@ -23,11 +23,11 @@ a:hover{
 	height: 200px;
 	background: url("../img/548346693312724161.png") no-repeat -20px 0;
 	background-size: 50%;
-	font-size: 23px;
+	font-size: 20px;
 	padding: 50px 0 0 120px;
 }
 .fy p{
-	margin-left: 40px;
+	margin-left: 20%;
 	margin-top: 10px;
 }
 .col-md-4 .fy a{
@@ -67,6 +67,7 @@ a:hover{
 	background: rgba(0, 0, 0, 0.5);
 	color: #fff;
 	padding: 20px;
+	font-size: 20px;
 }
 .sp .hs{
     width: 25%;
@@ -97,4 +98,25 @@ a:hover{
 }
 .ty .tya{
 	left: 75px;
+}
+.ts{
+	padding: 10px;
+	font-size: 16px;
+}
+.tj{
+	top: 15px;
+	left: 75px;
+	padding: 5px;
+	border-radius: 10px;
+	position: absolute;
+	background-color: #0293e6;
+	border: 0 none;
+	color: #333;
+}
+.tj:checked{
+	border: 0 none;
+}
+
+.vvv{
+
 }
