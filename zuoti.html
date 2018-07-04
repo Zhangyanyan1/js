@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/zuoti.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="con">
+                    <div class="fy">
+                        <h3>查对并协助老人服药</h3>
+                        <p><a href="#cc">开始考试吧</a></p>
+                    </div>
+                    <div id="cc" class="sp">
+                        <img src="img/ccc.gif" alt="">
+                        <a href="#dd">
+                            <div class="tm">
+                                <p>Hi！ ⼤家好，今天我们来考核⼀下《查对并协助⽼年⼈服药》的知识点</p>
+                            </div>
+                        </a>
+                        <img class="hs" src="img/334276967094841365.png"/>
+                    </div>
+                    <!--<form action="https://www.baidu.com" method="get">-->
+                    <form action="#tj" method="get">
+                    <div id="dd" class="sp">
+                        <img src="img/ccc.gif" alt="">
+                        <div class="tty">
+                            <p>1.⽼年⼈居住房间要求（ ）</p>
+                            <!--<span>A:安静整洁</span>-->
+                            <!--<span>B:温湿度事宜</span>-->
+                            <input type="radio" name="s" id="ay" value="ay" checked="checked" />
+                            <label for="ay">A:安静整洁</label>
+                            <input type="radio" name="s" id="by" value="by" />
+                            <label for="by">B:温湿度事宜</label>
+                            <br/>
+                            <!--<span>C:光线明亮</span>-->
+                            <!--<span>D:安静</span>-->
+                            <input type="radio" name="s" id="cy" value="cy" />
+                            <label for="cy">C:光线明亮</label>
+                            <input type="radio" name="s" id="dy" value="dy" />
+                            <label for="dy">D:安静</label>
+                        </div>
+                        <div class="tm ty">
+                            <p class="cone">第⼀题：选择题3分</p>
+                            <p class="cone">第⼀题：选择题3分</p>
+                            <a href="#ee">下一题</a>
+                        </div>
+                        <img class="hs" src="img/334276967094841365.png"/>
+                    </div>
+                    <div id="ee" class="sp">
+                        <img src="img/ccc.gif" alt="">
+                        <div class="tty">
+                            <p>2.护理员准备的物品有（）</p>
+                            <!--<span>A:已放置药物的药杯</span>-->
+                            <!--<span>B:温开⽔</span>-->
+                            <input type="checkbox" name="x" id="ar" value="ar" />
+                            <label for="ar">A:已放置药物的药杯</label>
+                            <input type="checkbox" name="x" id="br" value="br" />
+                            <label for="br">B:温开⽔</label>
+                            <br/>
+                            <!--<span>C:服药单</span>-->
+                            <!--<span>D:记录单</span>-->
+                            <input type="checkbox" name="x" id="cr" value="cr" />
+                            <label for="cr">C:服药单</label>
+                            <input type="checkbox" name="x" id="dr" value="dr" />
+                            <label for="dr">D:记录单</label>
+                        </div>
+                        <div class="tm ty">
+                            <p class="conet">第二题：选择题3分</p>
+                            <a href="#dd">上一题</a>
+                            <a class="tya" href="#ff">下一题</a>
+                        </div>
+                        <img class="hs" src="img/334276967094841365.png"/>
+                    </div>
+                    <div id="ff" class="sp">
+                        <img src="img/ccc.gif" alt="">
+                        <div class="tty ts">
+                            <span>3.下列描述是否正确</span>
+                            <p>护理⼈员在⽼⼈服药前应评估⽼⼈病情，⽼⼈精神状态，核对床位与⽼⼈姓名后即可给⽼⼈服药（ ）</p>
+                            <!--<span>正确</span>-->
+                            <!--<span>错误</span>-->
+                            <input type="radio" name="s" id="t" value="t" checked="checked" />
+                            <label for="t">正确</label>
+                            <input type="radio" name="s" id="f" value="f" />
+                            <label for="f">错误</label>
+                        </div>
+                        <div class="tm ty">
+                            <p class="conet">第三题：判断题4分</p>
+                            <a href="#ee">上一题</a>
+                            <!--<a type="s" class="tya" href="#tj">提交</a>-->
+                            <input type="submit" class="tj" value="提交" />
+                        </div>
+                        <img class="hs" src="img/334276967094841365.png"/>
+                    </div>
+                    </form>
+                    <div id="tj" class="fy">
+                        <h3>您本次考核得分为？</h3>
+                        <p id="deng"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var deng=document.getElementById('deng');
+        var e=Math.floor(Math.random()*10+3);
+        deng.innerHTML= e;
+    </script>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
