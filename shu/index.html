@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"/>-->
 
+    <title>表白啦</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+</head>
+<body>
+    <div></div>
+    <div class="box">
+        <ul class="pages">
+            <li class="page page0">
+                <img class="imgy wow fadeInRight" data-wow-duration="1s" data-wow-delay="1s" src="img/fy.jpg" alt=""/>
+                <img class="imgs wow fadeInRight" data-wow-duration="1.5s" data-wow-delay="1.5s" src="img/fs.jpg" alt=""/>
+            </li>
+            <li class="page page1 toBottom">
+                <h3 class="wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">关于天猿科技</h3>
+            </li>
+            <li class="page page2 toBottom">
+
+            </li>
+            <li class="page page3 toBottom">
+
+            </li>
+            <li class="page page4 toBottom">
+
+            </li>
+        </ul>
+    </div>
+    <script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/jquery.singlePageNav.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        $(function(){
+            $('.nav').singlePageNav({
+                offset:70
+            });
+            $('.navbar-collapse a').click(function(){
+                $('navbar-collapse').collapse('hide');
+            })
+            new WOW().init();
+        })
+    </script>
+</body>
+</html>
