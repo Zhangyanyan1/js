@@ -49,9 +49,14 @@ a {
     top: 0;
 }
 .page0{
-    background: url("../img/fmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
+}
+.fmy{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
 }
 .page0 .imgy{
     width: 50%;
@@ -66,8 +71,6 @@ a {
     top: 90%;
 }
 .page1 {
-    background: url("../img/ymy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page1 h3{
@@ -89,8 +92,6 @@ a {
     top: 81%;
 }
 .page2 {
-    background: url("../img/rmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page2 .imgy{
@@ -100,8 +101,6 @@ a {
     top: 54%;
 }
 .page3 {
-    background: url("../img/smy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page3 h3{
@@ -119,8 +118,6 @@ a {
     top: 65%;
 }
 .page4{
-    background: url("../img/simy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page4 .imgy{
@@ -142,8 +139,6 @@ a {
     top: 81.5%;
 }
 .page5{
-    background: url("../img/wmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page5 .imgy{
@@ -161,8 +156,6 @@ a {
     top: 84%;
 }
 .page6{
-    background: url("../img/lmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page6 .imgy{
@@ -184,8 +177,6 @@ a {
     top: 79%;
 }
 .page7{
-    background: url("../img/qmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page7 .imgy{
@@ -214,8 +205,6 @@ a {
     top: 85%;
 }
 .page8{
-    background: url("../img/bmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page8 .imgy{
@@ -255,8 +244,6 @@ a {
     top: 89%;
 }
 .page9{
-    background: url("../img/jmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page9 .imgy{
@@ -285,8 +272,6 @@ a {
     top: 89%;
 }
 .page10{
-    background: url("../img/shmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page10 .imgy{
@@ -314,8 +299,6 @@ a {
     top: 92%;
 }
 .page11{
-    background: url("../img/shymy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page11 .imgy{
@@ -333,8 +316,6 @@ a {
     top: 82%;
 }
 .page12{
-    background: url("../img/shrmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page12 .imgy{
@@ -366,8 +347,6 @@ a {
     top: 76%;
 }
 .page13{
-    background: url("../img/shsmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page13 .imgy{
@@ -392,8 +371,6 @@ a {
     top: 84.5%;
 }
 .page14{
-    background: url("../img/shsimy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page14 .imgy{
@@ -404,8 +381,6 @@ a {
      top: 63%;
  }
 .page15{
-    background: url("../img/shwmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page15 .imgy{
@@ -416,8 +391,6 @@ a {
      top: 71.5%;
  }
 .page16{
-    background: url("../img/shlmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page16 .imgy{
@@ -449,8 +422,6 @@ a {
     top: 83%;
 }
 .page17{
-    background: url("../img/shqmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page17 .imgy{
@@ -468,8 +439,6 @@ a {
     top: 78%;
 }
 .page18{
-    background: url("../img/shbmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page18 .imgy{
@@ -480,8 +449,6 @@ a {
     top: 73%;
 }
 .page19{
-    background: url("../img/shjmy.jpg") no-repeat;
-    background-size: 100% 100%;
     position: relative;
 }
 .page19 .imgy{
