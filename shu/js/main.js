@@ -10,6 +10,7 @@ document.body.addEventListener('touchstart',function(e){
 });
 document.body.addEventListener('touchend',function(e){
     isDir();
+    new WOW().init();
 });
 document.body.addEventListener('touchmove',function(e){
     ePos = e.touches[0].pageY;
