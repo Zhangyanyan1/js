@@ -76,14 +76,427 @@ a {
     left: 22%;
     top: 19%;
 }
+.page1 .imgr{
+    width: 90%;
+    position: absolute;
+    left: 8%;
+    top: 54%;
+}
+.page1 .imgy{
+    width: 16%;
+    position: absolute;
+    right: 23%;
+    top: 81%;
+}
 .page2 {
-    background-color: royalblue;
+    background: url("../img/rmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page2 .imgy{
+    width: 85%;
+    position: absolute;
+    left: 8%;
+    top: 54%;
 }
 .page3 {
-    background-color: aquamarine;
+    background: url("../img/smy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
 }
-.page4 {
-    background-color: burlywood;
+.page3 h3{
+    font-size: 21px;
+    color: #fff;
+    position: absolute;
+    left: 25%;
+    top: 19.5%;
+}
+.page3 .imgy{
+    width: 78%;
+    height: 12%;
+    position: absolute;
+    left: 11%;
+    top: 65%;
+}
+.page4{
+    background: url("../img/simy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page4 .imgy{
+    width: 47%;
+    position: absolute;
+    left: 36%;
+    top: 60.5%;
+}
+.page4 .imgr{
+    width: 55%;
+    position: absolute;
+    left: 36%;
+    top: 71.5%;
+}
+.page4 .imgs{
+    width: 43%;
+    position: absolute;
+    left: 36%;
+    top: 81.5%;
+}
+.page5{
+    background: url("../img/wmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page5 .imgy{
+    width: 87%;
+    height: 6%;
+    position: absolute;
+    left: 8%;
+    top: 69%;
+}
+.page5 .imgr{
+    width: 87%;
+    height: 4%;
+    position: absolute;
+    left: 8%;
+    top: 84%;
+}
+.page6{
+    background: url("../img/lmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page6 .imgy{
+    width: 24%;
+    position: absolute;
+    left: 9.5%;
+    top: 79%;
+}
+.page6 .imgr{
+    width: 24%;
+    position: absolute;
+    left: 37.5%;
+    top: 79%;
+}
+.page6 .imgs{
+    width: 24%;
+    position: absolute;
+    left: 66%;
+    top: 79%;
+}
+.page7{
+    background: url("../img/qmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page7 .imgy{
+    width: 87%;
+    height: 5%;
+    position: absolute;
+    left: 9.5%;
+    top: 65%;
+}
+.page7 .imgr{
+    height: 1%;
+    position: absolute;
+    left: 13%;
+    top: 85%;
+}
+.page7 .imgs{
+    height: 1%;
+    position: absolute;
+    left: 39%;
+    top: 85%;
+}
+.page7 .imgsi{
+    height: 1%;
+    position: absolute;
+    left: 63%;
+    top: 85%;
+}
+.page8{
+    background: url("../img/bmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page8 .imgy{
+    height: 1%;
+    position: absolute;
+    left: 30.5%;
+    top: 72.5%;
+}
+.page8 .imgr{
+    height: 1%;
+    position: absolute;
+    left: 53%;
+    top: 72.5%;
+}
+.page8 .imgs{
+    height: 1%;
+    position: absolute;
+    left: 75%;
+    top: 72.5%;
+}
+.page8 .imgsi{
+    height: 1%;
+    position: absolute;
+    left: 11.5%;
+    top: 89%;
+}
+.page8 .imgw{
+    height: 1%;
+    position: absolute;
+    left: 33%;
+    top: 89%;
+}
+.page8 .imgl{
+    height: 1%;
+    position: absolute;
+    left: 58.5%;
+    top: 89%;
+}
+.page9{
+    background: url("../img/jmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page9 .imgy{
+    width: 87%;
+    height: 7%;
+    position: absolute;
+    left: 8%;
+    top: 65.5%;
+}
+.page9 .imgr{
+    height: 1.5%;
+    position: absolute;
+    left: 16%;
+    top: 89%;
+}
+.page9 .imgs{
+    height: 1.5%;
+    position: absolute;
+    left: 45%;
+    top: 89%;
+}
+.page9 .imgsi{
+    height: 1.5%;
+    position: absolute;
+    left: 71%;
+    top: 89%;
+}
+.page10{
+    background: url("../img/shmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page10 .imgy{
+    height: 1.5%;
+    position: absolute;
+    left: 23.5%;
+    top: 75.5%;
+}
+.page10 .imgr{
+    height: 1.5%;
+    position: absolute;
+    left: 56.5%;
+    top: 75.5%;
+}
+.page10 .imgs{
+    height: 1.5%;
+    position: absolute;
+    left: 21%;
+    top: 92%;
+}
+.page10 .imgsi{
+    height: 1.5%;
+    position: absolute;
+    left: 56.5%;
+    top: 92%;
+}
+.page11{
+    background: url("../img/shymy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page11 .imgy{
+    width: 48%;
+    height: 15%;
+    position: absolute;
+    left: 8%;
+    top: 68%;
+}
+.page11 .imgr{
+    width: 46%;
+    height: 12%;
+    position: absolute;
+    left: 53.5%;
+    top: 82%;
+}
+.page12{
+    background: url("../img/shrmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page12 .imgy{
+    width: 36%;
+    height: 11%;
+    position: absolute;
+    left: 1%;
+    top: 62.5%;
+}
+.page12 .imgr{
+    width: 34%;
+    height: 10%;
+    position: absolute;
+    left: 65%;
+    top: 64%;
+}
+.page12 .imgs{
+    width: 45%;
+    height: 15%;
+    position: absolute;
+    left: 1%;
+    top: 81.5%;
+}
+.page12 .imgsi{
+    width: 41%;
+    height: 15%;
+    position: absolute;
+    left: 59%;
+    top: 76%;
+}
+.page13{
+    background: url("../img/shsmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page13 .imgy{
+    width: 72%;
+    height: 3%;
+    position: absolute;
+    left: 11%;
+    top: 62.5%;
+}
+.page13 .imgr{
+    width: 10%;
+    height: 3%;
+    position: absolute;
+    right: 9%;
+    top: 73.5%;
+}
+.page13 .imgs{
+    width: 73%;
+    height: 3%;
+    position: absolute;
+    left: 11%;
+    top: 84.5%;
+}
+.page14{
+    background: url("../img/shsimy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page14 .imgy{
+     width: 54%;
+     height: 13%;
+     position: absolute;
+     left: 36%;
+     top: 63%;
+ }
+.page15{
+    background: url("../img/shwmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page15 .imgy{
+     width: 61%;
+     height: 8%;
+     position: absolute;
+     left: 11%;
+     top: 71.5%;
+ }
+.page16{
+    background: url("../img/shlmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page16 .imgy{
+    width: 39%;
+    height: 11%;
+    position: absolute;
+    left: 15%;
+    top: 60.5%;
+}
+.page16 .imgr{
+    width: 37%;
+    height: 11%;
+    position: absolute;
+    left: 16%;
+    top: 74%;
+}
+.page16 .imgs{
+    width: 34%;
+    height: 8%;
+    position: absolute;
+    left: 65%;
+    top: 70%;
+}
+.page16 .imgsi{
+    width: 34%;
+    height: 8%;
+    position: absolute;
+    left: 65%;
+    top: 83%;
+}
+.page17{
+    background: url("../img/shqmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page17 .imgy{
+    width: 71%;
+    height: 10%;
+    position: absolute;
+    left: 25%;
+    top: 65%;
+}
+.page17 .imgr{
+    width: 59%;
+    height: 12%;
+    position: absolute;
+    left: 35%;
+    top: 78%;
+}
+.page18{
+    background: url("../img/shbmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page18 .imgy{
+    width: 71%;
+    height: 10%;
+    position: absolute;
+    left: 21%;
+    top: 73%;
+}
+.page19{
+    background: url("../img/shjmy.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.page19 .imgy{
+    width: 30%;
+    height: 5.5%;
+    position: absolute;
+    left: 21%;
+    top: 33%;
+}
+.page19 .imgr{
+    width: 46%;
+    height: 9%;
+    position: absolute;
+    left: 21%;
+    top: 40%;
 }
 /*不需要显示的页面到底部去*/
 .toBottom {
